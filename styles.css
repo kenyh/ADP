@@ -1,0 +1,305 @@
+@import url('css/reticula.css');
+
+body {
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+input, textarea {
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+h2 {
+	font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+p {
+	line-height: 5px;
+}
+
+.button {
+	border-radius: 12px;
+	border: none;
+	background: #fd324e;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 7px 12px;
+	width: 100;
+}
+
+.background {
+	background-image: url('images/friends.jpg');
+	background-size: cover;
+	background-position: 0;
+}
+.background_pages {
+	background:#00897B;
+}
+
+.contenedor {
+	width: 800px;
+	margin: auto;
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	margin-right: 25px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.col2 .button {
+	margin-top: 10px
+}
+
+.contacto {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	margin: 10px 10px 10px;
+}
+
+.info {
+    background-color: #eaeff5;
+    color: #888d9b;
+    padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table, th, td {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+.table {
+	margin: 50px 0;
+}
+
+.title  {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	margin-bottom: 0;
+	margin-top: 70px;
+}
+
+.title-a {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.title-b {
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+
+}
+
+.title-c {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.title span {
+	text-decoration: underline;
+}
+
+.front {
+	color: white;
+	height: 500px;
+	padding: 20px;
+}
+
+.front_pages {
+	color: white;
+	height: 200px;
+	padding: 20px;
+}
+
+.front button {
+	margin-bottom: 70px;
+}
+
+.footer {
+	background: #282629;
+	padding: 50px 10px;
+}
+
+.footer_pages {
+	background:#00897B;
+	padding: 50px 10px;
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_pages .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+
+}
+
+.formulario label, .mascotas, .adopcion {
+	margin-bottom: 12px
+}
+
+.guitarras {
+	color: #1F313C;
+	margin-bottom: 65px
+}
+.guitarras h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+}
+
+.guitarras_guitarra {
+	display: inline-block;
+	padding: 45px;
+    margin-bottom: -368px;
+    padding-bottom: 0px;
+}
+
+.mascota {
+	border: 1px solid #1F313C;
+	border-radius: 25px 65px;
+	margin: 10px 10px 30px 10px;
+	padding: 10px;
+}
+
+.mascota ol {
+	padding: 0;
+	padding-bottom: 40px;
+}
+
+.image_perro {
+	position: relative;
+	top: -358px;
+    left: 383px;
+}
+
+.image_gato {
+	position: relative;
+	top: 55px;
+}
+
+.intereses label {
+	font-size: 12px;
+}
+
+.logotipo {
+	display: inline-block;
+	margin-left: -200px;
+}
+
+.menu {
+	display: inline-block;
+	font-size: 24px;
+}
+
+.menu a {
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+}
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu li:before {
+	content:'°';
+	color: black;
+	font-size: 50px;
+	position: relative;
+    top: 20px;
+}
+
+.mascotas {
+	margin-top: 12px;
+}
+
+ul {
+	padding: 0;
+}
+
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Allerta', sans-serif;*/
+
+
+.col-3 a {
+	text-decoration: none;
+    color: #3facef;
+
+}
+
+.col-3 img {
+	width: 100%;
+}
+
+.col-9 img {
+	width: 100%;
+}
+
+.same-height {
+	max-height: 154%;
+	overflow: hidden;
+}

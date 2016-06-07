@@ -1,0 +1,109 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>Invie</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<section id="portada" class="front background">
+			<header id="header" class="header contenedor"> <!-- header -->
+				<figure class="logotipo"> <!-- logotipo -->
+				<img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+				</figure>
+
+				<nav class="menu"> <!-- menu -->
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="#guitarras">Guitarras</a>
+						</li>
+						<li>
+							<a href="precios.html">Precios</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="contenedor">
+				<h1 class="title"><span>Adopta</span>un peludito</h1><!-- titulo -->
+				<h3 class="title-a">Dejanos ser parte de tu familia y ayudanos a no estar solos en el mundo </h3><!-- resumen -->
+				<button class="button">ver más</button><!-- boton -->
+			</div>
+
+		</section>
+
+		<section id="guitarras" class="guitarras contenedor">
+			<h2>Adoptanos</h2><!-- titulo -->
+			<article class="mascota"><!-- guitarra 1 -->
+				<div class="guitarras_guitarra">
+					<a class="title-b" href="perros.html">Perros</a>
+					<ol>
+						<li>Estilo bintage</li>
+						<li>Madera pura</li>
+						<li>Estuche invisibel de aluminio</li>
+					</ol>
+					<img class="image_perro" src="images/beagle-training1.png" width="250" alt="perro"/>
+				</div>
+			</article>
+
+			<article class="mascota"><!-- guittarra 2 -->
+				<img class="image_gato"src="images/cat.png" width="350" alt="gato"/>
+				<div class="guitarras_guitarra">
+					<a class="title-b" href="gatos.html">Gatos</a>
+					<ol>
+						<li>Estilo vintage</li>
+						<li>Liviana</li>
+						<li>Inicia tu camino como rockstar</li>
+					</ol>
+				</div>
+			</article>
+		</section>
+	</body>
+	<footer class="footer">
+	<div class="contenedor">
+		<div class="contacto">
+			<img src="images/invie-white.png" alt="logotipo blanco">
+			<a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
+			<a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+		</div>
+
+		<form class="formulario">
+			<div class="col1">
+				<label for="nombre">Nombre</label>
+				<input type="text" required id="nombre" name="nombre" />
+				<label for="email">E-mail</label>
+				<input type="email" required id="email" name="email" />
+
+				<div class="mascotas">
+					<label for="perro">
+					<input type="radio" checked id="perro" name="mascota" value="perro"/>perro
+					</label>
+					<label for="gato">
+					<input type="radio" id="gato" name="mascota" value="gato"/>gato
+					</label>
+				</div>
+
+				<div class="adopcion">
+					<label for="adoptar">
+						<input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+					</label>
+					<label for="poner en adopcion">
+						<input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+					</label>
+				</div>
+			</div>
+
+			<div class="col2">
+				<label for="comentarios">comentarios</label>
+				<textarea name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
+				<input class="button" type="submit" value="Enviar">
+			</div>
+
+		</form>
+	</div>
+	</footer>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Invie</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+	</head>
+	<section id="portada" class="front_pages background_pages">
+            <header id="header" class="header contenedor"> <!-- header -->
+                <figure class="logotipo"> <!-- logotipo -->
+                <img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+                </figure>
+
+                <nav class="menu"> <!-- menu -->
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#guitarras">Guitarras</a>
+                        </li>
+                        <li>
+                            <a href="precios.html">Precios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+    </section>
+
+	<section class="single">
+		<div class="container">
+			<div class="row">
+			 	<h2 class="col-12">Cata</h2>
+				<div class="col-9">
+					<img src="images/gatos/Maru.png"/>
+				</div>
+				<div class="col-3">
+					<div class="row">
+						<div class="col-12 info">
+							<h4>Raza</h4> Bengala
+						</div>
+						<div class="col-12 info">
+							<h4>Color</h4> Atigrado
+						</div>
+						<div class="col-12 info">
+							<h4>Nacimiento</h4> 10 de Agosto,2015
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<h3 class="col-12">Descripción</h3>
+					<div class="col-12">
+						<p> Git el gato es un gato domestico mexicano, que desafortunadamente fue abandonado por su  madre biologica. Fue rescatado por una joven quien lo adopto y cuida muy bien de el.</p>
+
+						<p>Disfruta subirse a los muebles y dejar su pelo en ellos</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<h3 class="col-12">Galeria</h3>
+					<div class="col-3">
+				   		<img src="images/gatos/Cata/maru-2.jpg" class="same-height" height="400" />
+					</div>
+					<div class="col-3">
+				   		<img src="images/gatos/Cata/maru-3.jpg" class="same-height" height="400" />
+					</div>
+					<div class="col-3">
+				   		<img src="images/gatos/Cata/maru-4.jpg" class="same-height" height="400" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer_pages">
+    <div class="contenedor">
+        <div class="contacto">
+            <img src="images/invie-white.png" alt="logotipo blanco">
+            <a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
+            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+        </div>
+
+        <form class="formulario">
+            <div class="col1">
+                <label for="nombre">Nombre</label>
+                <input type="text" required id="nombre" name="nombre" />
+                <label for="email">E-mail</label>
+                <input type="email" required id="email" name="email" />
+
+                <div class="mascotas">
+                    <label for="perro">
+                    <input type="radio" checked id="perro" name="mascota" value="perro"/>perro
+                    </label>
+                    <label for="gato">
+                    <input type="radio" id="gato" name="mascota" value="gato"/>gato
+                    </label>
+                </div>
+
+                <div class="adopcion">
+                    <label for="adoptar">
+                        <input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+                    </label>
+                    <label for="poner en adopcion">
+                        <input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+                    </label>
+                </div>
+            </div>
+
+            <div class="col2">
+                <label for="comentarios">comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
+                <input class="button" type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+    </footer>
+</html>
+

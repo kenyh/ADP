@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Invie</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+    <section id="portada" class="front background">
+            <header id="header" class="header contenedor"> <!-- header -->
+                <figure class="logotipo"> <!-- logotipo -->
+                <img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+                </figure>
+
+                <nav class="menu"> <!-- menu -->
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#guitarras">Guitarras</a>
+                        </li>
+                        <li>
+                            <a href="precios.html">Precios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="contenedor">
+                <h1 class="title"><span>Adopta</span>un peludito</h1><!-- titulo -->
+                <h3 class="title-a">Dejanos ser parte de tu familia y ayudanos a no estar solos en el mundo </h3><!-- resumen -->
+                <button class="button">ver más</button><!-- boton -->
+            </div>
+
+    </section>
+
+    <section class="full-height-1">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-10">
+                    <h2 class="title-c">Lista de Gatos en Adopción</h2>
+                    <p>Haz click para conocer acerca de ellos</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/gatos/Git, el gato.png" class="same-height" />
+                </div>
+                <div class="col-3">
+                    <img src="images/gatos/grumpy/Grumpy Cat.png" class="same-height" />
+                </div>
+                <div class="col-3">
+                    <img src="images/gatos/Maru.png" class="same-height" />
+                </div>
+                <div class="col-3">
+                    <img src="images/gatos/Nyan Cat.png" class="same-height" />
+                </div>
+            </div>
+
+
+            <ol class="row">
+                <li class="col-3">
+                    <a href="git.html">Git, el gato</a>
+                </li>
+                <li class="col-3">
+                    <a href="grumpy.html">Grumpy cat</a>
+                </li>
+                <li class="col-3">
+                    <a href ="cata.html">Cata, la gata</a>
+                </li>
+                <li class="col-3">
+                    <a href="nyan cat.html">Nyan cat</a>
+                </li>
+            </ol>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+    <div class="contenedor">
+        <div class="contacto">
+            <img src="images/invie-white.png" alt="logotipo blanco">
+            <a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
+            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+        </div>
+
+        <form class="formulario">
+            <div class="col1">
+                <label for="nombre">Nombre</label>
+                <input type="text" required id="nombre" name="nombre" />
+                <label for="email">E-mail</label>
+                <input type="email" required id="email" name="email" />
+
+                <div class="mascota">
+                    <label for="perro">
+                    <input type="radio" checked id="perro" name="mascota" value="perro"/>perro
+                    </label>
+                    <label for="gato">
+                    <input type="radio" id="gato" name="mascota" value="gato"/>gato
+                    </label>
+                </div>
+
+                <div class="adopcion">
+                    <label for="adoptar">
+                        <input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+                    </label>
+                    <label for="poner en adopcion">
+                        <input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+                    </label>
+                </div>
+            </div>
+
+            <div class="col2">
+                <label for="comentarios">comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
+                <input class="button" type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+    </footer>
+
+</body>
+</html>

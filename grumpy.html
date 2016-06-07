@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Invie</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+	</head>
+	<section id="portada" class="front_pages background_pages">
+            <header id="header" class="header contenedor"> <!-- header -->
+                <figure class="logotipo"> <!-- logotipo -->
+                <img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+                </figure>
+
+                <nav class="menu"> <!-- menu -->
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#guitarras">Guitarras</a>
+                        </li>
+                        <li>
+                            <a href="precios.html">Precios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+    </section>
+
+	<section class="single">
+		<div class="container">
+			<div class="row">
+			 	<h2 class="col-12">Grumpy</h2>
+				<div class="col-9">
+					<img src="images/gatos/grumpy/Grumpy Cat.png"/>
+				</div>
+				<div class="col-3">
+					<div class="row">
+						<div class="col-12 info">
+							<h4>Raza</h4> Gato Himalayo
+						</div>
+						<div class="col-12 info">
+							<h4>Color</h4> Blanco con Café
+						</div>
+						<div class="col-12 info">
+							<h4>Nacimiento</h4> 22 de Diciembre,2012
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<h3 class="col-12">Descripción</h3>
+					<div class="col-12">
+						<p>Grumpy es un gato muy serio, es poco imperactivo le gusta pasarcela durmiendo y lambiendose en su cojin.Su dueña trabaja toda la semana asi que casi no juega con el.</p>
+                        <p>Pero ella adopto un perro llamado Body para que no estuviera solo.Ambos se la llevan bien aunque Body es un poco jugueton y a Grumpy poco le gusta jugar.</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<h3 class="col-12">Galeria</h3>
+					<div class="col-3">
+				   		<img src="images/gatos/grumpy/grumpy-2.png" class="same-height" height="400" />
+					</div>
+					<div class="col-3">
+				   		<img src="images/gatos/grumpy/grumpy-3.png" class="same-height" height="400" />
+					</div>
+					<div class="col-3">
+				   		<img src="images/gatos/grumpy/grumpy-4.png" class="same-height" height="400" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer_pages">
+    <div class="contenedor">
+        <div class="contacto">
+            <img src="images/invie-white.png" alt="logotipo blanco">
+            <a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
+            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+        </div>
+
+        <form class="formulario">
+            <div class="col1">
+                <label for="nombre">Nombre</label>
+                <input type="text" required id="nombre" name="nombre" />
+                <label for="email">E-mail</label>
+                <input type="email" required id="email" name="email" />
+
+                <div class="mascotas">
+                    <label for="perro">
+                    <input type="radio" checked id="perro" name="mascota" value="perro"/>perro
+                    </label>
+                    <label for="gato">
+                    <input type="radio" id="gato" name="mascota" value="gato"/>gato
+                    </label>
+                </div>
+
+                <div class="adopcion">
+                    <label for="adoptar">
+                        <input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+                    </label>
+                    <label for="poner en adopcion">
+                        <input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+                    </label>
+                </div>
+            </div>
+
+            <div class="col2">
+                <label for="comentarios">comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
+                <input class="button" type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+    </footer>
+</html>
+
