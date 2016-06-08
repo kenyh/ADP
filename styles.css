@@ -42,7 +42,7 @@ p {
 	background-position: 0;
 }
 .background_pages {
-	background:#00897B;
+	background: url('images/huellas.jpg');
 }
 
 .contenedor {
@@ -303,3 +303,6 @@ ul {
 	max-height: 154%;
 	overflow: hidden;
 }
+
+/*slider*/
+
