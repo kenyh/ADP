@@ -1,0 +1,74 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<title>ADP</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<section id="portada" class="front background">
+			<header id="header" class="header contenedor"> <!-- header -->
+				<figure class="logotipo"> <!-- logotipo -->
+				<img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+				</figure>
+
+				<nav class="menu"> <!-- menu -->
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="perros.html">Perros</a>
+						</li>
+						<li>
+							<a href="gatos.html">Gatos</a>
+						</li>
+						<li>
+							<a href="registro.html">Registro</a>
+						</li>
+
+					</ul>
+				</nav>
+			</header>
+			<div class="contenedor">
+				<h1 class="title"><span>Adopta</span>un peludito</h1><!-- titulo -->
+				<h3 class="title-a">Dejanos ser parte de tu familia y ayudanos a no estar solos en el mundo </h3><!-- resumen -->
+				<button class="button">ver más</button><!-- boton -->
+			</div>
+
+		</section>
+
+		<section class="registro">
+			<article  class="registro1">
+
+				<h6>Los campos con * son obligatorios</h6>
+					<h3>INGRESA TUS DATOS</h3>
+					<form action="registro.php" method="POST">
+						<label >usuario: </label>
+						<input type="text" name="nickname"></input><br /><br/>
+						<label>Nombre: </label>
+						<input type="text" name="usuario"></input><br /><br/>
+						<label>Contraseña: </label>
+						<input type="password" name="password"></input><br/><br/>
+						<label>E-mail: </label>
+						<input type="email" name="correo"></input><br /><br/>
+						<input type="submit" value="Registrarse"></input>
+					</form>
+			</article>
+
+		</section>
+	</body>
+
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+				<a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
+				<a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+			</div>
+		</div>
+	</footer>
+
+</html>

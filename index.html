@@ -20,11 +20,15 @@
 							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="#guitarras">Guitarras</a>
+							<a href="perros.html">Perros</a>
 						</li>
 						<li>
-							<a href="precios.html">Precios</a>
+							<a href="gatos.html">Gatos</a>
 						</li>
+						<li>
+							<a href="registro.html">Registro</a>
+						</li>
+
 					</ul>
 				</nav>
 			</header>
@@ -66,15 +70,27 @@
 	<footer class="footer">
 	<div class="contenedor">
 		<div class="contacto">
-			<img src="images/invie-white.png" alt="logotipo blanco">
+			<img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
 			<a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
 			<a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
 		</div>
+		<form method="POST" action="login.php">
+			<div class="login">
+				<label for="n_usuario">Usuario: </label>
+				<input type="text" name="n_usuario"></input>
+				<label for="pwd">Contraseña: </label>
+				<input type="password" name="pwd"></input><br></br>
+				<input  type="submit" value="Iniciar sesion"></input>
+			</div>
+		</form>
 
-		<form class="formulario">
+
+		<form method="post" action="Conexion.php" class="formulario">
 			<div class="col1">
 				<label for="nombre">Nombre</label>
 				<input type="text" required id="nombre" name="nombre" />
+				<label for="telefono">Telefono</label>
+				<input type="text" required id="telefono" name="telefono"></input>
 				<label for="email">E-mail</label>
 				<input type="email" required id="email" name="email" />
 
@@ -89,10 +105,10 @@
 
 				<div class="adopcion">
 					<label for="adoptar">
-						<input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+						<input type="checkbox" id="adoptar" name="adp" value="adoptar"/> Adoptar
 					</label>
 					<label for="poner en adopcion">
-						<input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+						<input type="checkbox" id="adoptar" name="adp" value="poner en adopcion"/> Poner en adopción
 					</label>
 				</div>
 			</div>
@@ -104,6 +120,12 @@
 			</div>
 
 		</form>
+
+		<form enctype="multipart/form-data" action="uploader.php" method="POST">
+			<input type="file" name="adjunto" />
+		</form>
+
 	</div>
+
 	</footer>
 </html>
