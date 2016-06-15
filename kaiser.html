@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+         <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<section id="portada" class="front_pages background_pages">
             <header id="header" class="header contenedor"> <!-- header -->
@@ -23,10 +25,6 @@
                         <li>
                             <a href="gatos.html">Gatos</a>
                         </li>
-                        <li>
-                            <a href="registro.html">Registro</a>
-                        </li>
-
                     </ul>
                 </nav>
             </header>
@@ -36,10 +34,30 @@
 
 	<section class="single">
 		<div class="container">
+        <section>
 			<div class="row">
-			 	<h2 class="col-12">Git, el gato</h2>
+			 	<h2 class="col-12">Kaiser</h2>
 				<div class="col-9">
-					<img src="images/perros/kaiser.jpg" height="900" />
+                    <ul id="slider" class="slider-wrapper">
+
+                                <!--<img src="images/perros/kaiser.jpg " alt="Slider Imagen 1" class="same-height">-->
+                            <li class="slide-current">
+
+                                <img src="images/perros/kaiser/kaiser-2.jpg" alt="Slider Imagen 1" class="same-height">
+
+                            </li>
+                            <li>
+                                <img src="images/perros/kaiser/kaiser-3.jpg" alt="Slider Imagen 1" class="same-height">
+
+                            </li>
+                            <li>
+                                <img src="images/perros/kaiser/kaiser-4.jpg"alt="Slider Imagen 1" class="same-height">
+
+                            </li>
+                        </ul>
+
+                        <!-- Controles -->
+                        <ul id="slider-controls" class="slider-controls"></ul>
 				</div>
 				<div class="col-3">
 					<div class="row">
@@ -53,6 +71,7 @@
 							<h4>Nacimiento</h4> 20 de Agosto,2014
 						</div>
 					</div>
+        </section>
 				</div>
 
 				<div class="row">
@@ -65,18 +84,6 @@
 
 				</div>
 
-				<div class="row">
-					<h3 class="col-12">Galeria</h3>
-					<div class="col-3">
-				   		<img src="images/perros/kaiser/kaiser (1).jpg" class="same-height" height="400" />
-					</div>
-					<div class="col-3">
-				   		<img src="images/perros/kaiser/kaiser (2).jpg" class="same-height" height="400" />
-					</div>
-					<div class="col-3">
-				   		<img src="images/perros/kaiser/kaiser (3).jpg" class="same-height" height="400" />
-					</div>
-				</div>
 
 			</div>
 		</div>
@@ -88,13 +95,16 @@
         <div class="contacto">
             <img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
             <a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
-            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>adoptaunpeludito@gmail.com</span></a>
         </div>
 
-        <form class="formulario">
+
+        <form method="post" action="Conexion.php" class="formulario">
             <div class="col1">
                 <label for="nombre">Nombre</label>
                 <input type="text" required id="nombre" name="nombre" />
+                <label for="telefono">Telefono</label>
+                <input type="text" required id="telefono" name="telefono"></input>
                 <label for="email">E-mail</label>
                 <input type="email" required id="email" name="email" />
 
@@ -109,12 +119,20 @@
 
                 <div class="adopcion">
                     <label for="adoptar">
-                        <input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+                        <input type="checkbox" id="adoptar" name="adp" value="adoptar"/> Adoptar
                     </label>
                     <label for="poner en adopcion">
-                        <input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+                        <input type="checkbox" id="adoptar" name="adp" value="poner en adopcion"/> Poner en adopción
                     </label>
                 </div>
+
+                <div class="foto">
+                    <form enctype="multipart/form-data" action="uploader.php" method="POST">
+                        <label for="seleccionar imagen">Subir foto</label>
+                            <input  type="file" name="adjunto" value="seleccionar imagen"/>
+                    </form>
+                </div>
+
             </div>
 
             <div class="col2">
@@ -124,7 +142,9 @@
             </div>
 
         </form>
+
     </div>
+
     </footer>
 </html>
 

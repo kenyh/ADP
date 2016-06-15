@@ -24,15 +24,11 @@
                         <li>
                             <a href="gatos.html">Gatos</a>
                         </li>
-                        <li>
-                            <a href="registro.html">Registro</a>
-                        </li>
-
                     </ul>
                 </nav>
             </header>
             <div class="contenedor">
-                <h1 class="title"><span>Adopta</span>un peludito</h1><!-- titulo -->
+                <h1 class="title"><span>Adopta</span> un peludito</h1><!-- titulo -->
                 <h3 class="title-a">Dejanos ser parte de tu familia y ayudanos a no estar solos en el mundo </h3><!-- resumen -->
                 <button class="button">ver más</button><!-- boton -->
             </div>
@@ -60,9 +56,6 @@
                 <div class="col-3">
                     <img src="images/gatos/Maru.png" class="same-height" />
                 </div>
-                <div class="col-3">
-                    <img src="images/gatos/Nyan Cat.png" class="same-height" />
-                </div>
             </div>
 
 
@@ -76,31 +69,31 @@
                 <li class="col-3">
                     <a href ="cata.html">Cata, la gata</a>
                 </li>
-                <li class="col-3">
-                    <a href="nyan cat.html">Nyan cat</a>
-                </li>
             </ol>
 
         </div>
 
     </section>
 
-    <footer class="footer">
+   <footer class="footer">
     <div class="contenedor">
         <div class="contacto">
-           <img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
+            <img src="images/logotipo.jpg" width="250" height="150" alt="Invie logotipo"/>
             <a href="tel:+573144476592"><strong>Teléfono</strong><span>3144476592</span></a>
-            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
+            <a href="mailto:conctato@invie.com"><strong>E-mail</strong> <span>adoptaunpeludito@gmail.com</span></a>
         </div>
 
-        <form class="formulario">
+
+        <form method="post" action="Conexion.php" class="formulario">
             <div class="col1">
                 <label for="nombre">Nombre</label>
                 <input type="text" required id="nombre" name="nombre" />
+                <label for="telefono">Telefono</label>
+                <input type="text" required id="telefono" name="telefono"></input>
                 <label for="email">E-mail</label>
                 <input type="email" required id="email" name="email" />
 
-                <div class="mascota">
+                <div class="mascotas">
                     <label for="perro">
                     <input type="radio" checked id="perro" name="mascota" value="perro"/>perro
                     </label>
@@ -111,12 +104,20 @@
 
                 <div class="adopcion">
                     <label for="adoptar">
-                        <input type="checkbox" id="adoptar" name="adopcion" value="adoptar"/> Adoptar
+                        <input type="checkbox" id="adoptar" name="adp" value="adoptar"/> Adoptar
                     </label>
                     <label for="poner en adopcion">
-                        <input type="checkbox" id="adoptar" name="adopcion" value="poner en adopcion"/> Poner en adopción
+                        <input type="checkbox" id="adoptar" name="adp" value="poner en adopcion"/> Poner en adopción
                     </label>
                 </div>
+
+                <div class="foto">
+                    <form enctype="multipart/form-data" action="uploader.php" method="POST">
+                        <label for="seleccionar imagen">Subir foto</label>
+                            <input  type="file" name="adjunto" value="seleccionar imagen"/>
+                    </form>
+                </div>
+
             </div>
 
             <div class="col2">
@@ -126,8 +127,9 @@
             </div>
 
         </form>
-    </div>
-    </footer>
 
+    </div>
+
+    </footer>
 </body>
 </html>
